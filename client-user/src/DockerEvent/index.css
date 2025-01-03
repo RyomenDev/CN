@@ -1,0 +1,55 @@
+/* Container for the entire calendar */
+.react-calendar {
+  @apply bg-gray-800 text-white rounded-sm shadow-lg p-1 lg:p-4;
+  overflow: hidden;
+}
+
+/* Tile styling for each day in the calendar */
+.react-calendar__tile {
+  @apply bg-cyan-500 text-white rounded-s-md p-0 m-0 lg:p-3 lg:m-1 transition-all duration-200;
+}
+
+/* Hover effect on calendar tiles */
+.react-calendar__tile:hover {
+  @apply bg-blue-300 cursor-pointer scale-105;
+}
+
+/* Active tile styling when the user selects a date */
+.react-calendar__tile--active {
+  @apply bg-blue-700 text-white border-2 border-blue-400;
+}
+
+/* Styling for the navigation buttons (previous and next month buttons) */
+.react-calendar__navigation button {
+  @apply bg-blue-700 text-white rounded-lg py-2 px-4 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-all;
+}
+
+/* Disabled state for navigation buttons */
+.react-calendar__navigation button:disabled {
+  @apply bg-gray-600 text-gray-400 cursor-not-allowed;
+}
+
+/* Weekday names (Mon, Tue, etc.) */
+.react-calendar__month-view__weekdays__weekday {
+  @apply text-sm font-medium text-white bg-slate-400;
+}
+
+/* Styling for the header of the calendar (month and year view) */
+.react-calendar__navigation__label {
+  @apply text-lg font-semibold text-gray-100;
+}
+
+/* Today’s date styling (use a border to highlight today) */
+.react-calendar__tile--now {
+  @apply bg-yellow-400 text-white border-2 border-blue-300;
+}
+
+/* Styling for the current day in the calendar */
+.react-calendar__tile--now:hover {
+  @apply bg-red-800 text-black scale-105;
+}
+
+/* Ensure the calendar doesn't overflow */
+.react-calendar__month-view__days {
+  overflow: hidden;
+}
