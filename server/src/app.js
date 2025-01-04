@@ -21,6 +21,7 @@ app.use(
       const allowedOrigins = [
         conf.CORS_ORIGIN1.replace(/\/$/, ""),
         conf.CORS_ORIGIN2.replace(/\/$/, ""),
+        conf.CORS_ORIGIN3.replace(/\/$/, ""),
       ];
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
