@@ -45,7 +45,7 @@ const MainData = {
           <ul>
             {[
               { icon: "fas fa-home", text: "" },
-              { icon: "fas fa-envelope", text: "ai.akash.mishra@gmail.com" },
+              { icon: "fas fa-envelope", text: "support@codenetra.com" },
               { icon: "fas fa-phone", text: "" },
             ].map((item, index) => (
               <li key={index} className="flex items-center space-x-2">

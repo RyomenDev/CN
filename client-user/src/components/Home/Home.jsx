@@ -6,17 +6,17 @@ const Home = () => {
   return (
     <div className=" border-4 border-slate-800 space-y-12 bg-gradient-to-b from-cyan-950 via-slate-900 to-black text-white min-h-screen">
       {/* Header Section */}
-      <header className="relative">
+      <header className="relative w-full h-[50vh] md:h-screen">
         <img
           src={header.url}
           alt="Website Header"
-          className="w-screen h-screen object-cover"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">
-          <h1 className="text-8xl font-bold text-white drop-shadow-lg">
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center p-4">
+          <h1 className="text-4xl md:text-8xl font-bold text-white drop-shadow-lg">
             {header.appName}
           </h1>
-          <p className="text-xl mt-4 max-w-3xl text-center text-gray-300">
+          <p className="text-base md:text-xl mt-4 max-w-xl text-gray-300">
             {header.welcome}
           </p>
         </div>
@@ -82,10 +82,11 @@ const Home = () => {
               </h3>
               <p className="text-gray-300 mb-4">{course.description}</p>
               <a
-                href={course.link}
-                className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors cursor-not-allowed opacity-50"
               >
-                Learn More
+                Coming Soon
               </a>
             </div>
           ))}
