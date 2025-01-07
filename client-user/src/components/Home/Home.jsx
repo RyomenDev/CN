@@ -24,17 +24,19 @@ const Home = () => {
 
       {/* Hero Section */}
       <section className="text-center p-8 bg-gray-800">
-        <h1 className="text-4xl font-bold mb-4 animate-fade-in-down">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 animate-fade-in-down text-white">
           {hero.title}
         </h1>
-        <p className="text-lg mb-6 animate-fade-in-up">{hero.subtitle}</p>
-        <button className="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+        <p className="text-base sm:text-lg md:text-xl mb-6 animate-fade-in-up text-gray-300">
+          {hero.subtitle}
+        </p>
+        <button className="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors text-sm sm:text-base">
           {hero.buttonText}
         </button>
         <img
           src={hero.image}
           alt="Hero"
-          className="mt-6 mx-auto max-w-lg rounded-lg shadow-lg animate-scale-in"
+          className="mt-6 mx-auto max-w-full sm:max-w-md md:max-w-lg rounded-lg shadow-lg animate-scale-in"
         />
       </section>
 
