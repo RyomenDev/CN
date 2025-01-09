@@ -96,7 +96,7 @@ const Home = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="p-8">
+      {/* <section className="p-8">
         <h2 className="text-3xl font-bold mb-6 text-center text-purple-400">
           What Our Users Say
         </h2>
@@ -120,7 +120,7 @@ const Home = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Call-to-Action Section */}
       <section className="text-center p-8 bg-gray-800">
